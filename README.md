@@ -1,89 +1,93 @@
 # Build & Learn — Coding Tutor for Codex
 
-**Build & Learn** to skill dla Codexa do nauki programowania na własnym projekcie. Repozytorium nosi nazwę `build-learn-skill`, a nazwa instalowanego skilla i jego wywołanie pozostają odpowiednio `coding-tutor` i `$coding-tutor`.
+**Build & Learn** is a Codex skill for learning to code through your own project. The repository is named `build-learn-skill`; the installed skill is named `coding-tutor` and invoked with `$coding-tutor`.
 
-Przenośny skill do nauki programowania przez pracę nad jednym wybranym projektem. Najlepiej wykorzystuje istniejącą aplikację z portfolio: pomaga ją poprawiać i rozwijać, a przy okazji uczyć się implementacji, diagnozowania błędów i wyjaśniania decyzji. Można też zacząć nowy projekt, jeśli taki jest wybór uczestnika.
+Work on one project at a time, preferably an existing portfolio application. Improve its code, fix bugs, and add useful features while learning to implement changes, diagnose problems, and explain technical decisions. Starting a new project is also supported when that is your choice.
 
-Nie zawiera gotowej roadmapy konkretnej aplikacji ani profilu poprzedniego uczestnika. Dopasowuje zadania do rzeczywistego kodu i dowodów nauki. Przygotowanie do rozmów technicznych opiera na pracy wykonanej w tym projekcie.
+The skill does not ship with a fixed application roadmap or a previous learner's profile. It adapts assignments to your code and demonstrated skills. Technical interview preparation draws on the work you actually do in the project.
 
-## Dodanie do projektu
+## Installation
 
-Skopiuj cały katalog `coding-tutor` do `.agents/skills/coding-tutor/` w projekcie. Zachowaj `SKILL.md` oraz katalogi `agents/`, `references/`, `scripts/` i `assets/`.
+Copy the entire skill directory into `.agents/skills/coding-tutor/` in your project. Keep `SKILL.md` and the `agents/`, `references/`, `scripts/`, and `assets/` directories together.
 
-Alternatywnie skopiuj katalog do `~/.codex/skills/coding-tutor`, aby skill był dostępny w wielu projektach. Każda współpraca nadal skupia się na jednym wybranym projekcie. Nie potrzebujesz obu instalacji. Jeśli skill nie jest widoczny, uruchom ponownie Codexa.
+Alternatively, install it in `~/.codex/skills/coding-tutor` to make it available across projects. Each mentoring engagement still focuses on one selected project. You do not need both installations. Restart Codex if the skill does not appear.
 
-Otwórz Codexa w projekcie i wyślij na przykład:
+The repository name differs from the skill name: when copying a downloaded or cloned repository, name the destination directory `coding-tutor`.
+
+Open Codex in your project and send, for example:
 
 ```text
 $coding-tutor
-Chcę poprawić istniejący projekt z portfolio i uczyć się przy jego rozwijaniu.
-Sprawdź kod, zaproponuj usprawnienia i nowe funkcje, a potem ustalmy plan nauki.
+I want to improve an existing portfolio project and learn while developing it.
+Inspect the code, suggest improvements and new features, and help me agree on a learning plan.
 ```
 
-## Poprawki i nowe funkcje
+The mentor follows your language; you do not need to use English for lessons.
 
-Plan może obejmować naprawę błędów, poprawę jakości i nowe funkcje. Mentor aktywnie szuka możliwości na podstawie aplikacji, celu uczestnika i zaobserwowanych braków wiedzy.
+## Improvements and new features
 
-Przy propozycji wyjaśnia wartość dla użytkownika, cel nauki, przybliżony zakres oraz istotne wymagania lub kompromisy. Pyta o preferencje i uzgadnia rozszerzenia wykraczające poza przyjętą roadmapę. Uzgodnione zmiany trafiają do planu; zaakceptowanych zadań nie trzeba zatwierdzać ponownie. Propozycja nie przerywa automatycznie bieżącej pracy.
+The plan can include bug fixes, quality improvements, and new features. The mentor proactively identifies opportunities based on the application, your goals, and observed learning gaps.
 
-Nie dodaje funkcji, zależności ani przebudowy wyłącznie po to, żeby przećwiczyć technologię. Uzgodnienie funkcji nie oznacza przejęcia implementacji przez mentora. Domyślnie uczestnik pisze kod, uruchamia kontrole i wykonuje operacje Git. Bezpośrednie zlecenie konkretnej edycji lub kontroli upoważnia do tej pracy w jej zakresie.
+Each proposal explains its user value, learning goal, approximate scope, and relevant prerequisites or tradeoffs. The mentor asks about your preferences and agrees on extensions beyond the accepted roadmap before adopting them. Agreed changes become part of the plan; already accepted tasks do not require repeated approval. A proposal does not automatically interrupt the current task.
 
-## Pierwsze użycie i dokumenty projektu
+Features, dependencies, and architectural rewrites should serve the project rather than exist solely to practice a technology. Agreeing on a feature does not hand implementation over to the mentor. By default, you write production code, run checks, and perform Git operations. A direct request for a specific edit or check authorizes that work within its scope.
 
-Rozpoczęcie mentoringu w wybranym projekcie upoważnia do utworzenia brakujących dokumentów nauki oraz krótkiego pliku `AGENTS.md`. Skill najpierw sprawdza istniejący kod i dokumentację, a następnie ustala brakujące informacje istotne dla planu. Nieznane fakty pozostawia nieustalone.
+## First use and project records
 
-Domyślny zestaw dokumentów:
+Starting mentoring in a selected project authorizes creation of missing learning records and a short `AGENTS.md` pointer. The skill first inspects existing code and documentation, then asks for missing information that affects the plan. Unknown facts remain explicitly unestablished.
 
-- `AGENTS.md`: wskazanie skilla, źródeł kontekstu i zasad ciągłości pracy.
-- `docs/README.md`: indeks dokumentacji nauki.
-- `docs/ROADMAP.md`: cel, zakres, decyzje, etapy i kryteria ukończenia.
-- `docs/PROGRESS.md`: wykonana praca, wyniki kontroli, ograniczenia i następny krok.
-- `docs/LEARNING_SUMMARY.md`: umiejętności samodzielne i wymagające pomocy, dowody, powtórki i przygotowanie do rozmów technicznych.
-- `docs/APP_GUIDE.md`: działanie aplikacji, decyzje techniczne, krótkie przedstawienie projektu, demonstracja i pytania do przećwiczenia.
-- `docs/MENTOR.md`: lokalny podział pracy, preferencja dotycząca testów, ograniczenia i uzgodnione wyjątki.
+The default records are:
 
-Skill korzysta z [szablonów](assets/project/) i [procedury konfiguracji](references/onboarding.md). Zachowuje istniejące dokumenty, ich odpowiedniki i historię. Tworzy tylko brakujące zapisy i utrzymuje je w kolejnych sesjach bez zakładania drugiego zestawu dokumentacji.
+- `AGENTS.md`: the skill, context sources, and continuity rules.
+- `docs/README.md`: an index of learning documents.
+- `docs/ROADMAP.md`: goals, scope, decisions, milestones, and acceptance criteria.
+- `docs/PROGRESS.md`: completed work, actual check results, limitations, and the next step.
+- `docs/LEARNING_SUMMARY.md`: independent and guided skills, evidence, review topics, and technical interview preparation.
+- `docs/APP_GUIDE.md`: application behavior, technical decisions, a short introduction, a demo walkthrough, and rehearsal questions.
+- `docs/MENTOR.md`: local work ownership, testing preference, constraints, and agreed exceptions.
 
-Początkowa roadmapa jest propozycją do uzgodnienia przed zadaniami implementacyjnymi. Mentor ustala też, czy uczestnik chce sam pisać testy ze wsparciem, czy otrzymywać kompletne testy. Wybór można zmienić w dowolnej chwili.
+The skill uses [templates](assets/project/) and a [first-use procedure](references/onboarding.md). It preserves existing documents, equivalent records, and history. Only missing records are created; future sessions maintain the same documentation rather than starting a second set.
 
-`LEARNING_SUMMARY.md` rozróżnia implementację, wyjaśnianie, diagnozowanie i zastosowanie wiedzy w nowej sytuacji oraz zapisuje poziom pomocy. Gotowy kod i zielony test nie dowodzą samodzielnego rozumienia; niezadane pytania pozostają nieocenione. Drobne obserwacje są łączone w krótkie wpisy.
+The initial roadmap is a proposal to agree on before implementation assignments begin. The mentor also asks whether you prefer to write tests with guidance or receive complete tests. You can change that preference at any time.
 
-`APP_GUIDE.md` jest aktualizowany wraz ze zmianą zachowania lub uruchamiania aplikacji. Rozróżnia funkcje wdrożone i planowane oraz niezweryfikowane kroki demonstracji. Przygotowany scenariusz nie dowodzi samodzielnej umiejętności prezentacji.
+`LEARNING_SUMMARY.md` distinguishes implementation, explanation, diagnosis, and applying knowledge to a new situation, including the level of assistance. Working code and passing tests do not establish independent understanding. Unasked questions remain unassessed. Minor observations are batched into short entries.
 
-Otwarcie folderu, recenzja skilla ani samo `/free` nie inicjalizują dokumentacji. Skill nie zakłada poziomu uczestnika ani wyników testów. Nie zmienia automatycznie `.gitignore`, nie robi commitów i nie uruchamia aplikacji bez odpowiedniego upoważnienia.
+`APP_GUIDE.md` changes with application behavior and startup instructions. It distinguishes implemented and planned features and identifies unverified demo steps. Having a prepared script does not demonstrate independent presentation ability.
 
-## Rozmowa i przywracanie kontekstu
+Opening a folder, reviewing the skill, or using only `/free` does not initialize learning records. The skill does not assume your ability or invent test results. It does not automatically change `.gitignore`, make commits, or run the application without appropriate authorization.
 
-- `/mentor`: nauka i praca nad projektem; powrót do ostatniego niedokończonego kroku.
-- `/free`: swobodna rozmowa bez wymuszonych ćwiczeń i pytań kontrolnych. Nie zmienia uprawnień do edycji ani Git.
+## Conversation and continuity
 
-To konwencje wiadomości, nie dodatkowo zarejestrowane komendy interfejsu. Nowa rozmowa mentoringowa domyślnie zaczyna się w trybie mentor; wznowiona zachowuje jawnie ustalony tryb dostępny w kontekście rozmowy.
+- `/mentor`: structured learning and project work; resumes the last unfinished step.
+- `/free`: informal discussion without compulsory exercises or knowledge checks. It does not change editing or Git permissions.
 
-Mentor ocenia umiejętności na podstawie prób i notatek. Dla znanej logiki podaje zadanie lub szkielet, dla nieznanego API minimalny przykład z wyjaśnieniem. Pełne rozwiązanie jest dostępne na prośbę; użycie przykładu nie jest zapisywane jako samodzielne wykonanie.
+These are message conventions, not additional native interface commands. A new mentoring conversation defaults to mentor mode; a resumed conversation preserves an explicitly established mode available in its conversation context.
 
-`SKILL.md` zawiera krótki `Continuity contract`. Projektowy `AGENTS.md` kieruje do niego i dokumentów nauki. Przy wznowieniu, po kompakcji lub przy niepewności mentor odczytuje właściwe instrukcje i zapisy, odtwarza zadanie, poziom pomocy i niewyjaśnione kwestie. Brakujące dokumenty uzupełnia bez kasowania historii.
+The mentor calibrates assistance from your attempts and notes. Familiar logic receives a task or scaffold; an unfamiliar API receives a minimal example and explanation. Full solutions are available on request. Using a supplied example is not recorded as independent implementation.
 
-Po zgłoszeniu odejścia od zasad poprawia bieżący krok bez restartowania kursu ani wymagania przepisywania ujawnionego rozwiązania. Utrzymanie skilla i luźne rozmowy nie są zapisywane jako postęp aplikacji. To mechanizm ograniczania utraty kontekstu, a nie gwarancja niezawodnego przestrzegania instrukcji; nie wymaga automatycznego hooka.
+`SKILL.md` includes a compact `Continuity contract`. The project's `AGENTS.md` points to it and the learning records. On resumption, after context compaction, or when continuity is uncertain, the mentor reads the relevant instructions and records to recover the task, support level, and unresolved questions. Missing records are repaired without erasing history.
 
-## Narzędzia i sprawdzanie pakietu
+When you report a teaching-rule violation, the mentor corrects the current step without restarting the curriculum or making you retype a disclosed solution. Skill maintenance and informal discussions are not recorded as application progress. This reduces context loss; it does not guarantee perfect instruction following and requires no automatic hook.
 
-Sama metoda nauki nie wymaga Node ani dodatkowych usług. Opcjonalne skrypty wymagają Node.js 20 lub nowszego i nie mają zależności npm. Z katalogu skilla:
+## Tools and package checks
+
+The teaching workflow itself does not require Node.js or additional services. Optional scripts require Node.js 20 or newer and have no npm dependencies. From the skill directory:
 
 ```powershell
-node scripts/session-context.mjs 'C:\sciezka\do\twojego-projektu'
+node scripts/session-context.mjs 'C:\path\to\your-project'
 node --test scripts/session-context.test.mjs scripts/package.test.mjs
 ```
 
-Pierwszy skrypt wyłącznie odczytuje ograniczone fragmenty dokumentacji i stan Git. Nie inicjalizuje projektu, nie ocenia wiedzy i nie rozpoznaje trybu rozmowy. Nie ma automatycznych hooków ani płatnego runnera modeli.
+The first script only reads bounded documentation excerpts and Git status. It does not initialize a project, assess knowledge, or detect the conversation mode. There are no automatic hooks or paid model runners.
 
-Formalny walidator dostarczany ze skillem `skill-creator` wymaga Pythona i biblioteki `PyYAML`. Sprawdza strukturę pakietu; nie ocenia jakości nauczania. [Scenariusze zachowania](references/behavioral-cases.json) i [instrukcja oceny](references/evaluation.md) wymagają osobnego przeprowadzenia. Testy struktury i helpera nie dowodzą skuteczności odpowiedzi modelu.
+The formal validator provided with the `skill-creator` skill requires Python and `PyYAML`. It checks package structure rather than teaching quality. The [behavioral scenarios](references/behavioral-cases.json) and [evaluation guide](references/evaluation.md) require separate execution and review. Package and helper tests do not establish the effectiveness of model responses.
 
-## Utrzymanie
+## Maintenance
 
-Źródłem utrzymywanej wersji jest katalog roboczy `coding-tutor`; instalacja jest jego kopią. Zmiany wprowadzaj i sprawdzaj w źródle, następnie synchronizuj odpowiednie pliki instalacji, zachowując niezależne zmiany.
+The working `coding-tutor` directory is the maintained source; the installed skill is a copy. Make and verify changes in the source, then synchronize the relevant installation files while preserving independent changes.
 
-Pochodzenie wskazówek komunikacyjnych i nota MIT upstream znajdują się w [attribution.md](references/attribution.md). Zachowaj tę informację przy udostępnianiu pakietu.
+Communication-guidance provenance and the upstream MIT notice are in [attribution.md](references/attribution.md). Preserve this information when redistributing the package.
 
-## Licencja
+## License
 
-Pakiet jest udostępniany na licencji [MIT](LICENSE). Materiał adaptowany z upstream zachowuje dodatkowo oryginalną notę w [attribution.md](references/attribution.md).
+The package is available under the [MIT License](LICENSE). Adapted upstream material also retains its original notice in [attribution.md](references/attribution.md).
