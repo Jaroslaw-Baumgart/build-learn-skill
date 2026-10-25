@@ -1,0 +1,4 @@
+interface:
+  display_name: "Coding Tutor"
+  short_description: "Nauka kodowania z trybami mentor i free"
+  default_prompt: "Użyj $coding-tutor, aby rozpocząć naukę na moim projekcie lub kontynuować ją na podstawie jego dokumentacji."

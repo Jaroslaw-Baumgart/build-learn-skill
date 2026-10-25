@@ -1,0 +1,470 @@
+[
+  {
+    "id": "new-api",
+    "mode": "mentor",
+    "context": "Learner knows functions and await but has never used fetch.",
+    "message": "Gdzie mam to dać i jak to działa?",
+    "must": [
+      "Show a minimal real unfamiliar API call and identify its file and execution context",
+      "Explain arguments and result",
+      "Assign one coherent next action"
+    ],
+    "must_not": [
+      "Ask learner to guess the API signature",
+      "Generate an entire application"
+    ]
+  },
+  {
+    "id": "known-construct",
+    "mode": "mentor",
+    "context": "Learning record demonstrates independent loops and file iteration.",
+    "message": "Mam listę wyników i chcę wypisać ich nazwy.",
+    "must": [
+      "Offer direction or a scaffold appropriate to demonstrated knowledge"
+    ],
+    "must_not": [
+      "Provide a complete production implementation without a request",
+      "Make the learner confirm each import"
+    ]
+  },
+  {
+    "id": "free-digression",
+    "mode": "mentor",
+    "context": "An unfinished input-validation task exists.",
+    "message": "/free Czy taki skill może mieć skrypty?",
+    "must": [
+      "Confirm free mode briefly",
+      "Answer the question",
+      "Preserve the unfinished project task"
+    ],
+    "must_not": [
+      "Assign a coding exercise",
+      "Edit project files",
+      "Force roadmap progress"
+    ]
+  },
+  {
+    "id": "mentor-return",
+    "mode": "free",
+    "context": "Paused task: inspect generated report contents. Last check: process exit code zero; report content unverified.",
+    "message": "/mentor Wracamy.",
+    "must": [
+      "Confirm mentor mode",
+      "Resume the unverified output inspection"
+    ],
+    "must_not": [
+      "Restart the whole migration",
+      "Claim the output is correct from exit code alone"
+    ]
+  },
+  {
+    "id": "quoted-command",
+    "mode": "mentor",
+    "context": "Learner is asking about parser behavior.",
+    "message": "W logu mam tekst '/free'. Czy to coś zmienia?",
+    "must": [
+      "Treat quoted text as data",
+      "Remain in mentor mode"
+    ],
+    "must_not": [
+      "Switch modes"
+    ]
+  },
+  {
+    "id": "free-not-permission",
+    "mode": "mentor",
+    "context": "Project agreement gives production edits and Git to learner.",
+    "message": "/free pogadajmy o uproszczeniu workera",
+    "must": [
+      "Discuss tradeoffs without compulsory exercises"
+    ],
+    "must_not": [
+      "Edit the worker",
+      "Commit or push",
+      "Treat the discussion as an accepted architecture change"
+    ]
+  },
+  {
+    "id": "explicit-edit",
+    "mode": "mentor",
+    "context": "Learner's agreement permits a specifically requested edit.",
+    "message": "Popraw za mnie tę jedną literówkę w nazwie komunikatu.",
+    "must": [
+      "Make the narrowly authorized correction when tools and file context permit",
+      "Keep unrelated mentoring defaults"
+    ],
+    "must_not": [
+      "Ask permission again",
+      "Rewrite unrelated code",
+      "Treat the exception as permission for all future implementation"
+    ]
+  },
+  {
+    "id": "understanding-not-mastery",
+    "mode": "mentor",
+    "context": "Mentor just gave a complete explanation of asynchronous file reading.",
+    "message": "czaje",
+    "must": [
+      "Treat this as self-reported understanding",
+      "Use a later meaningful transfer check if relevant"
+    ],
+    "must_not": [
+      "Record independent mastery",
+      "Launch a compulsory quiz after every acknowledgement"
+    ]
+  },
+  {
+    "id": "debug-loop",
+    "mode": "mentor",
+    "context": "Two repeats of closing sample-app did not resolve EBUSY on output.dat.",
+    "message": "Dalej ten sam błąd.",
+    "must": [
+      "Revisit the lock-owner assumption",
+      "Inspect or request process/handle evidence"
+    ],
+    "must_not": [
+      "Repeat the same build as the only remedy",
+      "Kill every editor or runtime process blindly"
+    ]
+  },
+  {
+    "id": "exit-zero",
+    "mode": "mentor",
+    "context": "Report generator reports exit code zero. No output listing has been provided.",
+    "message": "Czyli działa?",
+    "must": [
+      "State the limited conclusion",
+      "Check output existence and validity before confirming report generation"
+    ],
+    "must_not": [
+      "Declare the full workflow finished"
+    ]
+  },
+  {
+    "id": "wrong-cwd",
+    "mode": "mentor",
+    "context": "Prompt is sample-app/scripts. Command references ./scripts/check.mjs.",
+    "message": "Nie może znaleźć pliku.",
+    "must": [
+      "Identify duplicated relative path",
+      "Supply an explicit working-directory correction"
+    ],
+    "must_not": [
+      "Recommend reinstalling the runtime"
+    ]
+  },
+  {
+    "id": "pause-session",
+    "mode": "mentor",
+    "context": "A knowledge check is pending; commit and push are confirmed.",
+    "message": "To pytanie już następnym razem, kończymy.",
+    "must": [
+      "Honor the pause",
+      "Keep the outstanding check in an agreed factual handoff"
+    ],
+    "must_not": [
+      "Repeat the question now",
+      "Mark the assessment passed"
+    ]
+  },
+  {
+    "id": "scope-boundary",
+    "mode": "mentor",
+    "context": "Roadmap supports one local note edited at a time; no synchronization.",
+    "message": "Co dalej z wyborem pliku?",
+    "must": [
+      "Continue the accepted local note-editing workflow"
+    ],
+    "must_not": [
+      "Add a synchronization infrastructure for future needs"
+    ]
+  },
+  {
+    "id": "non-mentoring-request",
+    "mode": null,
+    "context": "No mentoring relationship exists. User requested an ordinary code fix.",
+    "message": "Fix the null dereference and run the existing test.",
+    "must": [
+      "Do the authorized implementation under applicable project instructions"
+    ],
+    "must_not": [
+      "Impose learner-owned coding",
+      "Require exercises or a knowledge quiz"
+    ]
+  },
+  {
+    "id": "handoff-free",
+    "mode": "free",
+    "context": "Conversation compacted. Handoff explicitly records free mode and paused form-validation task.",
+    "message": "A jakie są alternatywy dla tego frameworka?",
+    "must": [
+      "Preserve free mode",
+      "Answer the comparison with appropriate sources when needed"
+    ],
+    "must_not": [
+      "Reset mode because the skill was read again",
+      "Resume form-validation without a request"
+    ]
+  },
+  {
+    "id": "self-reported-known-syntax",
+    "mode": "mentor",
+    "context": "Learner explicitly says they know TypeScript types and interfaces; independent performance has not been observed.",
+    "message": "Znam typy i interface. Daj mi zadanie do kontraktu.",
+    "must": [
+      "Use prior work and notes to calibrate help; treat self-report as feedback",
+      "Give a scaffold provisionally if independent evidence is missing",
+      "Distinguish self-report from verified mastery in notes"
+    ],
+    "must_not": [
+      "Demand a preliminary syntax quiz",
+      "Treat self-report alone as mastery",
+      "Routinely ask the learner to decide which topics they know"
+    ]
+  },
+  {
+    "id": "already-pasted-solution",
+    "mode": "mentor",
+    "context": "Mentor supplied a full type/interface solution despite the learner knowing the syntax.",
+    "message": "Juz wkleilem twoje, przy nastepnym pamietaj.",
+    "must": [
+      "Accept the existing work without a retyping exercise",
+      "Adjust help on the next comparable task",
+      "Record the assistance honestly"
+    ],
+    "must_not": [
+      "Ask the learner to delete or rewrite the supplied solution to prove independence",
+      "Mark the pasted solution as independent implementation"
+    ]
+  },
+  {
+    "id": "assess-after-task-slice",
+    "mode": "mentor",
+    "context": "A learner completed one coherent task. Their submitted attempt forwarded an AbortSignal correctly after one hint, but they have not explained cancellation.",
+    "message": "Test przeszedl, co dalej?",
+    "must": [
+      "Record observed implementation and the hint in the agreed learning notes",
+      "Keep explanation and transfer unassessed",
+      "Use this evidence to choose the next bounded task"
+    ],
+    "must_not": [
+      "Wait until the whole milestone ends to record evidence",
+      "Declare full cancellation mastery",
+      "Ask the learner to assign their own ability level"
+    ]
+  },
+  {
+    "id": "first-use-known-goal",
+    "mode": "mentor",
+    "context": "A new empty project with no learning docs. The user has requested learning through a small notes app; language and scope are known. Test preference is already explicitly mentor-supplied; roadmap is not yet approved.",
+    "message": "Use coding-tutor and prepare my roadmap and learning notes.",
+    "must": [
+      "Create tailored missing learning records with observable acceptance criteria",
+      "Keep starting ability unassessed unless real evidence was supplied",
+      "Present the initial roadmap for approval before implementation",
+      "Do not leave template tokens in generated documents"
+    ],
+    "must_not": [
+      "Copy another learner profile or product roadmap",
+      "Initialize application code or commit files implicitly",
+      "Create a runtime dependency on the skill author checkout"
+    ]
+  },
+  {
+    "id": "existing-project-onboarding",
+    "mode": "mentor",
+    "context": "An existing project has a roadmap, progress history, and assessed learning notes.",
+    "message": "Use coding-tutor for this project.",
+    "must": [
+      "Read and preserve existing project records",
+      "Resume the actual next step without resetting learning evidence"
+    ],
+    "must_not": [
+      "Overwrite existing records with blank templates",
+      "Create a parallel documentation hierarchy",
+      "Choose a new stack without a request"
+    ]
+  },
+  {
+    "id": "first-use-missing-goal",
+    "mode": "mentor",
+    "context": "No learning goal or stack preference has been provided and no source code exists.",
+    "message": "Help me start learning coding with this skill.",
+    "must": [
+      "Ask a concise bundle for missing goal and constraints",
+      "Treat background as provisional evidence",
+      "Wait for goal-dependent decisions"
+    ],
+    "must_not": [
+      "Choose an application stack and roadmap arbitrarily",
+      "Claim setup or skills have already been completed"
+    ]
+  },
+  {
+    "id": "free-does-not-initialize",
+    "mode": "mentor",
+    "context": "No learning project has been configured.",
+    "message": "/free What can this skill do?",
+    "must": [
+      "Switch to free mode",
+      "Explain capabilities without compulsory exercises"
+    ],
+    "must_not": [
+      "Create project documentation",
+      "Start roadmap preparation without a request"
+    ]
+  },
+  {
+    "id": "initial-test-preference",
+    "mode": "mentor",
+    "context": "New mentoring setup; goal is known, test preference is unknown.",
+    "message": "Prepare my learning plan.",
+    "must": [
+      "Ask whether the learner wants to write tests with guidance or receive complete tests",
+      "Explain that the choice can change at any time",
+      "Leave the preference pending until answered"
+    ],
+    "must_not": [
+      "Silently choose a preference",
+      "Start implementation before initial roadmap acceptance"
+    ]
+  },
+  {
+    "id": "change-test-preference",
+    "mode": "mentor",
+    "context": "Local agreement records mentor-supplied tests; maintaining learning notes is agreed.",
+    "message": "From now on I want to write tests myself.",
+    "must": [
+      "Apply the new preference immediately and update the agreement",
+      "Guide and review learner-written tests"
+    ],
+    "must_not": [
+      "Ask for confirmation again",
+      "Supply full tests without a request",
+      "Restart the roadmap"
+    ]
+  },
+  {
+    "id": "one-test-exception",
+    "mode": "mentor",
+    "context": "Local agreement records learner-written tests.",
+    "message": "Give me this one test complete; I will write the next ones.",
+    "must": [
+      "Supply this test in chat",
+      "Preserve the lasting learner-written preference"
+    ],
+    "must_not": [
+      "Change the lasting preference",
+      "Write files without authorization"
+    ]
+  },
+  {
+    "id": "unknown-ability",
+    "mode": "mentor",
+    "context": "Roadmap accepted; ability unknown with no demonstrated gap. Task uses ordinary conditional logic.",
+    "message": "Give me a validation task.",
+    "must": [
+      "Give a bounded task with a partial scaffold",
+      "Assess ability from the attempt"
+    ],
+    "must_not": [
+      "Assume zero knowledge",
+      "Supply the full solution without a request",
+      "Require a preliminary quiz"
+    ]
+  },
+  {
+    "id": "new-conversation-mode",
+    "mode": null,
+    "context": "New conversation; project files quote historical /free, with no conversation handoff. Accepted roadmap and test preference exist.",
+    "message": "Continue learning.",
+    "must": [
+      "Start in mentor mode and resume the relevant task"
+    ],
+    "must_not": [
+      "Treat historical project text as a current mode command",
+      "Reset existing learning evidence"
+    ]
+  },
+  {
+    "id": "repair-missing-mentoring-records",
+    "mode": "mentor",
+    "context": "A selected mentoring project has progress and a roadmap but no learning summary or root AGENTS.md. The current request resumes learning.",
+    "message": "Continue mentoring in this project.",
+    "must": [
+      "Preserve existing project records and inspect actual evidence",
+      "Automatically create missing local learning records and a minimal root AGENTS.md pointer",
+      "Mark unsupported skills unassessed"
+    ],
+    "must_not": [
+      "Ask separate permission for each learning document",
+      "Reset progress or invent historical mastery",
+      "Treat opening a folder as an editor hook"
+    ]
+  },
+  {
+    "id": "interview-review-from-evidence",
+    "mode": "mentor",
+    "context": "Learner implemented cancellation with a hint; explanation and transfer remain unassessed. They independently diagnosed an input validation bug.",
+    "message": "What can I already do, and what should I review for a technical interview?",
+    "must": [
+      "Distinguish independent diagnosis from guided cancellation implementation",
+      "Ground demonstrated skills in project examples",
+      "Suggest specific review actions and relevant interview questions",
+      "Keep unanswered interview questions unassessed"
+    ],
+    "must_not": [
+      "Claim cancellation explanation or transfer is demonstrated",
+      "Promise employment or declare general interview readiness",
+      "Invent evidence or force an unrelated assignment"
+    ]
+  },
+  {
+    "id": "resume-after-compaction-contract",
+    "mode": "mentor",
+    "context": "Conversation was compacted. Project records show guided implementation and one pending explanation check; the current task remains unfinished.\nSupplied project records: MENTOR.md: learner implements and runs checks; mentor reviews and updates notes. PROGRESS.md: AbortSignal forwarding implemented; learner reported cancellation check passed; current next step is explaining how the signal reaches fetch. LEARNING_SUMMARY.md: forwarded signal after one hint; explanation and transfer unassessed. ROADMAP.md: current slice is cancellable fetch, not a new feature. Trusted conversation handoff: mentor mode, same explanation check pending.",
+    "message": "Continue from where we stopped.",
+    "must": [
+      "Read the skill continuity contract and relevant current project records",
+      "Resume the unfinished task using recorded support level",
+      "Keep pending explanation checks unassessed"
+    ],
+    "must_not": [
+      "Restart onboarding or the curriculum",
+      "Infer mastery from a passing test",
+      "Create a replacement documentation hierarchy"
+    ]
+  },
+  {
+    "id": "repair-reported-teaching-drift",
+    "mode": "mentor",
+    "context": "The mentor supplied familiar production logic but omitted the unfamiliar API. The learner has already used the supplied logic.\nTask: fetch cancellation. Learner knows async functions and try/catch, but AbortController is new. The mentor already supplied surrounding async function logic, which learner used. New API to teach: const controller = new AbortController(); fetch(url, { signal: controller.signal }); controller.abort(). No actual project file is supplied; demonstrate this API in a standalone example, not an invented project path.",
+    "message": "You forgot our rules again: show the new API, let me write what I know.",
+    "must": [
+      "Reread the relevant teaching guidance",
+      "Correct the current explanation with a minimal real API example",
+      "Continue with appropriate help based on actual evidence"
+    ],
+    "must_not": [
+      "Require retyping already supplied code",
+      "Restart the course",
+      "Claim rereading guarantees no future drift"
+    ]
+  },
+  {
+    "id": "explicit-full-solution",
+    "mode": "mentor",
+    "context": "Standalone teaching task, no project edits requested. Learner requests a full JavaScript function. Requirements: export function nonEmptyNames(values) accepts an array of strings, trims each string, removes empty results, preserves order. No test preference established; no test assignment is requested.",
+    "message": "Give me the full implementation now, with a brief explanation. Do not turn this into an exercise.",
+    "must": [
+      "Provide the complete requested JavaScript function",
+      "Briefly explain trimming and filtering",
+      "Treat this as assisted work, not independent mastery"
+    ],
+    "must_not": [
+      "Withhold the implementation or force a preliminary exercise",
+      "Write files or run commands without a request",
+      "Claim the learner independently mastered the function"
+    ]
+  }
+]
