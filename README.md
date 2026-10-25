@@ -1,4 +1,6 @@
-# Coding Tutor
+# Build & Learn — Coding Tutor for Codex
+
+**Build & Learn** to skill dla Codexa do nauki programowania na własnym projekcie. Repozytorium nosi nazwę `build-learn-skill`, a nazwa instalowanego skilla i jego wywołanie pozostają odpowiednio `coding-tutor` i `$coding-tutor`.
 
 Przenośny skill do nauki programowania przez pracę nad jednym wybranym projektem. Najlepiej wykorzystuje istniejącą aplikację z portfolio: pomaga ją poprawiać i rozwijać, a przy okazji uczyć się implementacji, diagnozowania błędów i wyjaśniania decyzji. Można też zacząć nowy projekt, jeśli taki jest wybór uczestnika.
 
